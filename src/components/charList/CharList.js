@@ -15,7 +15,6 @@ class CharList extends Component {
   marvelService = new MarvelService();
 
   componentDidMount() {
-    console.log("did mount");
     this.marvelService
       .getAllCharacters()
       .then(this.onCharListLoaded)
