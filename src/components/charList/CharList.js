@@ -21,7 +21,7 @@ class CharList extends Component {
   }
 
   onRequest = (offset) => {
-    console.log("request");
+
     this.onCharListLoading();
     this.marvelService
       .getAllCharacters(offset)
@@ -53,8 +53,6 @@ class CharList extends Component {
 
   renderItems(charList) {
     const items = charList.map((item) => {
-      console.log(item);
-
       let imgStyle = { objectFit: "contain" };
       if (
         item.thumbnail ===
